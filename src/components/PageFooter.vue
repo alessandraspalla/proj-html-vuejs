@@ -6,4 +6,6 @@ export default {
 
 <template></template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use './../styles/variables' as *;
+</style>
