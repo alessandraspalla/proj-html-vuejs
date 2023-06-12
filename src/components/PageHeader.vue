@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: 'PageHeader'
+    name: 'PageHeader',
+    props: {
+        details: Array
+    }
 }
 </script>
 
@@ -21,9 +24,15 @@ export default {
                     hello@example.com
                 </div>
                 <div class="social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -35,17 +44,18 @@ export default {
                     <img src="/img/logo.svg" alt="logo nex gen">
                 </div>
                 <ul>
-                    <li>HOME</li>
-                    <li>SERVICES</li>
-                    <li>ABOUT</li>
-                    <li>PRICING</li>
-                    <li>OMINO</li>
-                    <li>GET IN TOUCH</li>
+                    <li v-for="link in details">
+                        <a :href="link.url" :class="link.btn ? 'btn primary' : ''">
+                            {{ link.text }}
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <div id="jumbotron">
                 <span>EXPRESS DELIVERY</span>
-                <h1>What are we going to deliver today?</h1>
+                <h1>What are we going to deliver <span>
+                        <div class="bg"></div>today?
+                    </span></h1>
                 <button class="btn primary">
                     GET IN TOUCH
                 </button>
@@ -74,10 +84,14 @@ export default {
 
         .contact {
             display: flex;
-            gap: 8px;
+            gap: 20px;
+
+            a {
+                color: $white;
+            }
 
             .social i {
-                margin-inline: 8px;
+                margin-inline: 12px;
             }
         }
     }
@@ -90,11 +104,18 @@ header {
     background-size: cover;
     position: relative;
 
+    a {
+        color: $title-color;
+        margin-inline: 13px;
+        font-size: .85rem;
+    }
+
     .btn {
         padding: 10px;
         border-radius: 3px;
         font-size: .8rem;
         margin: 8px;
+        margin-top: 20px;
     }
 
     .btn.primary {
@@ -129,6 +150,20 @@ header {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
+
+        h1 span {
+            color: $primary-color;
+            position: relative;
+
+            .bg {
+                background-color: rgba($primary-color, $alpha: .2);
+                width: 200px;
+                height: 1.8rem;
+                position: absolute;
+                left: 0;
+                bottom: 3px;
+            }
+        }
 
         span {
             color: #0da6a6;

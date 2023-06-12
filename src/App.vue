@@ -8,12 +8,43 @@ export default {
         PageHeader,
         PageMain,
         PageFooter
+    },
+    data() {
+        return {
+            links: [
+                {
+                    text: 'HOME',
+                    url: '#'
+                },
+                {
+                    text: 'SERVICES',
+                    url: '#'
+                },
+                {
+                    text: 'ABOUT',
+                    url: '#'
+                },
+                {
+                    text: 'PRICING',
+                    url: '#'
+                },
+                {
+                    //text: '<i class="fa-thin fa-user"></i>',
+                    url: '#'
+                },
+                {
+                    text: 'GET IN TOUCH',
+                    url: '#',
+                    btn: true
+                }
+            ]
+        }
     }
 }
 </script>
 
 <template>
-    <PageHeader />
+    <PageHeader :details="links" />
     <PageMain />
     <PageFooter />
 </template>
