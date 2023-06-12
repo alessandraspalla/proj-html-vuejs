@@ -67,6 +67,21 @@ export default {
                 </div>
             </div>
         </section>
+
+        <section id="industry-leader">
+            <div class="container">
+                <div id="text">
+                    <span>WHO WE ARE</span>
+                    <h1>Industry Leaders.</h1>
+                    <p>
+                        With all of this expertise and capability comes an unrivalled commitment to customer service.
+                    </p>
+                    <p>
+                        We will work hard to understand your needs in order to develop a productive, long-term partnership.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -153,6 +168,35 @@ export default {
             font-weight: 500;
         }
     }
+
+}
+
+#industry-leader {
+    height: 580px;
+    background-image: url('/img/bg-6.jpg');
+    background-size: cover;
+    background-position: 0 -60px;
+
+    .container {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 100%;
+
+        #text {
+            width: 40%;
+
+            h1 {
+                color: $title-color;
+            }
+
+            p {
+                margin-block: 20px;
+            }
+        }
+
+    }
+
 
 }
 </style>
