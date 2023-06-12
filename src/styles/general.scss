@@ -1,8 +1,18 @@
+@use './variables' as *;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    border: none;
 }
 
 a {
@@ -16,4 +26,19 @@ li {
 .container {
     max-width: 1100px;
     margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $title-color;
+}
+
+h1 {
+    font-size: 3.4rem;
+    font-weight: 900;
+    line-height: 4.3rem;
 }

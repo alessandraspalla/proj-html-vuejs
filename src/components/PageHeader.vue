@@ -28,6 +28,33 @@ export default {
             </div>
         </div>
     </div>
+    <header>
+        <div class="container">
+            <nav>
+                <div id="logo">
+                    <img src="/img/logo.svg" alt="logo nex gen">
+                </div>
+                <ul>
+                    <li>HOME</li>
+                    <li>SERVICES</li>
+                    <li>ABOUT</li>
+                    <li>PRICING</li>
+                    <li>OMINO</li>
+                    <li>GET IN TOUCH</li>
+                </ul>
+            </nav>
+            <div id="jumbotron">
+                <span>EXPRESS DELIVERY</span>
+                <h1>What are we going to deliver today?</h1>
+                <button class="btn primary">
+                    GET IN TOUCH
+                </button>
+                <button class="btn reverse">
+                    READ MORE
+                </button>
+            </div>
+        </div>
+    </header>
 </template>
 
 <style lang="scss" scoped>
@@ -37,6 +64,7 @@ export default {
     height: 40px;
     background-color: $title-color;
     color: $white;
+    font-size: .75rem;
 
     .container {
         display: flex;
@@ -46,6 +74,64 @@ export default {
 
         .contact {
             display: flex;
+            gap: 8px;
+
+            .social i {
+                margin-inline: 8px;
+            }
+        }
+    }
+}
+
+header {
+    min-height: 550px;
+    background-image: url('/img/bg-13.jpg');
+    background-position: 0 -50px;
+    background-size: cover;
+    position: relative;
+
+    .btn {
+        padding: 10px;
+        border-radius: 3px;
+        font-size: .8rem;
+        margin: 8px;
+    }
+
+    .btn.primary {
+        color: #fff;
+        background-color: $primary-color;
+    }
+
+    .btn.reverse {
+        color: $primary-color;
+        background-color: #fff;
+        border: 1px solid $primary-color;
+    }
+
+
+    nav {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #logo {
+            width: 8%;
+        }
+
+        ul {
+            display: flex;
+        }
+    }
+
+    #jumbotron {
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        span {
+            color: #0da6a6;
         }
     }
 }
