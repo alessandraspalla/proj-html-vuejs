@@ -98,7 +98,7 @@ export default {
 }
 
 header {
-    min-height: 550px;
+    height: 550px;
     background-image: url('/img/bg-13.jpg');
     background-position: 0 -50px;
     background-size: cover;
@@ -114,8 +114,8 @@ header {
         padding: 10px;
         border-radius: 3px;
         font-size: .8rem;
-        margin: 8px;
-        margin-top: 20px;
+        margin-top: 30px;
+        margin-right: 10px;
     }
 
     .btn.primary {
@@ -150,6 +150,10 @@ header {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
+
+        h1 {
+            line-height: 3.7rem;
+        }
 
         h1 span {
             color: $primary-color;
