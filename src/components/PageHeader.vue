@@ -110,26 +110,6 @@ header {
         font-size: .85rem;
     }
 
-    .btn {
-        padding: 10px;
-        border-radius: 3px;
-        font-size: .8rem;
-        margin-top: 30px;
-        margin-right: 10px;
-    }
-
-    .btn.primary {
-        color: #fff;
-        background-color: $primary-color;
-    }
-
-    .btn.reverse {
-        color: $primary-color;
-        background-color: #fff;
-        border: 1px solid $primary-color;
-    }
-
-
     nav {
         height: 60px;
         display: flex;
@@ -153,6 +133,7 @@ header {
 
         h1 {
             line-height: 3.7rem;
+            color: $title-color;
         }
 
         h1 span {
