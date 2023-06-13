@@ -27,10 +27,10 @@ export default {
                         </a>
                     </div>
                     <h3>Shipping Fast</h3>
-                    <div class="description">
+                    <p class="description">
                         Special fast delivery service that guarantees the arrival of the object on the same day as postage.
                         Included monitoring via mobile app.
-                    </div>
+                    </p>
                 </div>
                 <!-- column -->
                 <div class="col methods">
@@ -41,9 +41,9 @@ export default {
                         </a>
                     </div>
                     <h3>Motoboy</h3>
-                    <div class="description">
+                    <p class="description">
                         Functional motoboy for delivery of documents and small objects.
-                    </div>
+                    </p>
                 </div>
                 <!-- column -->
                 <div class="col methods">
@@ -54,9 +54,9 @@ export default {
                         </a>
                     </div>
                     <h3>Shuttle Van</h3>
-                    <div class="description">
+                    <p class="description">
                         Suitable for medium sized loads that need digital tracking.
-                    </div>
+                    </p>
                 </div>
                 <!-- column -->
                 <div class="col methods">
@@ -67,9 +67,9 @@ export default {
                         </a>
                     </div>
                     <h3>Mini Truck</h3>
-                    <div class="description">
+                    <p class="description">
                         For dry cargo deliveries with more cubic allocation.
-                    </div>
+                    </p>
                 </div>
             </div>
         </section>

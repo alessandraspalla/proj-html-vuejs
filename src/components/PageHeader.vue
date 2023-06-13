@@ -52,6 +52,16 @@ export default {
                             {{ link.text }}
                         </a>
                     </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#form" class="btn primary">
+                            GET IN TOUCH
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- hero -->

@@ -27,15 +27,6 @@ export default {
                 {
                     text: 'PRICING',
                     url: '#pricing-table'
-                },
-                {
-                    //text: '<i class="fa-thin fa-user"></i>',
-                    url: '#'
-                },
-                {
-                    text: 'GET IN TOUCH',
-                    url: '#form',
-                    btn: true
                 }
             ]
         }
