@@ -6,8 +6,10 @@ export default {
 
 <template>
     <main>
+        <!-- section with delivery methods -->
         <section id="delivery-methods">
             <div class="container">
+                <!-- column -->
                 <div class="col">
                     <span class="summary">WHAT WE DO</span>
                     <h2>We offer a full range of
@@ -16,6 +18,7 @@ export default {
                         </span> methods.
                     </h2>
                 </div>
+                <!-- column -->
                 <div class="col-60 methods">
                     <div class="icon">
                         <i class="fa-solid fa-truck-fast"></i>
@@ -29,6 +32,7 @@ export default {
                         Included monitoring via mobile app.
                     </div>
                 </div>
+                <!-- column -->
                 <div class="col methods">
                     <div class="icon">
                         <i class="fa-solid fa-motorcycle"></i>
@@ -41,6 +45,7 @@ export default {
                         Functional motoboy for delivery of documents and small objects.
                     </div>
                 </div>
+                <!-- column -->
                 <div class="col methods">
                     <div class="icon">
                         <i class="fa-solid fa-van-shuttle"></i>
@@ -53,6 +58,7 @@ export default {
                         Suitable for medium sized loads that need digital tracking.
                     </div>
                 </div>
+                <!-- column -->
                 <div class="col methods">
                     <div class="icon">
                         <i class="fa-solid fa-truck"></i>
@@ -67,7 +73,7 @@ export default {
                 </div>
             </div>
         </section>
-
+        <!-- section about us -->
         <section id="industry-leader">
             <div class="container">
                 <div id="text">
@@ -85,7 +91,7 @@ export default {
                 </div>
             </div>
         </section>
-
+        <!-- section with pricing table -->
         <section id="pricing-table">
             <div class="container">
                 <span class="summary">MONTHLY PLANS</span>
@@ -95,8 +101,9 @@ export default {
                     from
                     strategy development to implemention.
                 </p>
-
+                <!-- row with d-flex -->
                 <div class="row">
+                    <!-- card -->
                     <div class="card">
                         <i class="fa-solid fa-rocket"></i>
                         <h3>Standard</h3>
@@ -124,6 +131,7 @@ export default {
                             </li>
                         </ul>
                     </div>
+                    <!-- card with best price -->
                     <div class="card scale">
                         <div class="label">
                             Most Popular
@@ -154,6 +162,7 @@ export default {
                             </li>
                         </ul>
                     </div>
+                    <!-- card -->
                     <div class="card">
                         <i class="fa-solid fa-gem"></i>
                         <h3>Ultimate</h3>
@@ -184,7 +193,7 @@ export default {
                 </div>
             </div>
         </section>
-
+        <!-- section with slogan why choose us -->
         <section id="slogan">
             <div class="text">
                 <h1>
@@ -212,6 +221,7 @@ i {
     font-size: 2rem;
 }
 
+/* delivery-methods section style */
 #delivery-methods {
     background-color: #111117;
     padding-block: 80px;
@@ -277,6 +287,7 @@ i {
 
 }
 
+/* industry-leader section style */
 #industry-leader {
     height: 580px;
     background-image: url('/img/bg-6.jpg');
@@ -307,6 +318,7 @@ i {
 
 }
 
+/* pricing-table section style */
 #pricing-table {
     text-align: center;
     padding-block: 80px;
@@ -378,6 +390,7 @@ i {
 
 }
 
+/* slogan section style */
 #slogan {
     height: 550px;
     background-image: url('/img/bg-7.jpg');
@@ -413,5 +426,4 @@ i {
         }
 
     }
-}
-</style>
+}</style>

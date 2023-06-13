@@ -8,6 +8,7 @@ export default {
 </script>
 
 <template>
+    <!-- section with contacts -->
     <div id="contacts">
         <div class="container">
             <div id="opening-time">
@@ -37,8 +38,10 @@ export default {
             </div>
         </div>
     </div>
+    <!-- header -->
     <header>
         <div class="container">
+            <!-- nav with references to main sections -->
             <nav>
                 <div id="logo">
                     <img src="/img/logo.svg" alt="logo nex gen">
@@ -51,6 +54,7 @@ export default {
                     </li>
                 </ul>
             </nav>
+            <!-- hero -->
             <div id="jumbotron">
                 <span class="summary">EXPRESS DELIVERY</span>
                 <h1>What are we going to deliver <span>
@@ -70,6 +74,7 @@ export default {
 <style lang="scss" scoped>
 @use './../styles/variables' as *;
 
+/* contacts style */
 #contacts {
     height: 40px;
     background-color: $title-color;
@@ -97,6 +102,7 @@ export default {
     }
 }
 
+/* header style */
 header {
     height: 550px;
     background-image: url('/img/bg-13.jpg');
@@ -125,6 +131,7 @@ header {
         }
     }
 
+    /* hero style */
     #jumbotron {
         width: 40%;
         position: absolute;
