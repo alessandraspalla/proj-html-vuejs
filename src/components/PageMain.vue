@@ -352,6 +352,7 @@ i {
         .card.scale {
             transform: scale(1.09);
             position: relative;
+            box-shadow: 3px 7px lightgray;
 
             .label {
                 text-align: left;
