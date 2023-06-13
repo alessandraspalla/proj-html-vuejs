@@ -18,14 +18,33 @@ export default {
                     <select>
                         <option value="More info">More Info</option>
                     </select>
-                    <textarea cols="30" rows="10" placeholder="Message" required></textarea>
+                    <textarea cols="40" rows="25" placeholder="Message" required></textarea>
                     <button class="btn primary">
                         SEND
                     </button>
                 </form>
             </div>
-            <div class="contacts">
-
+            <div class="contact">
+                <h3>Example Inc.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Praesent diam lacus, lapibus sed imperdiet consectetur.</p>
+                <div class="contacts">
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +1 (305) 1234-5678
+                    </div>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        hello@example.com
+                    </div>
+                    <div class="maps">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Main Avenue, 987
+                    </div>
+                    <button class="btn reverse">
+                        VIEW MAP
+                    </button>
+                </div>
             </div>
         </div>
     </footer>
@@ -56,7 +75,8 @@ footer {
         }
 
         .form {
-            width: 55%;
+            width: 57%;
+            margin-right: 40px;
 
             form {
                 display: flex;
@@ -80,6 +100,7 @@ footer {
                 }
 
                 textarea {
+                    min-height: 80px;
                     width: 100%;
                     border: none;
                     border-radius: 3px;
@@ -90,8 +111,29 @@ footer {
             }
         }
 
-        .contacts {
-            width: 40%;
+        .contact {
+            width: 30%;
+
+            h3,
+            p {
+                color: $title-color;
+            }
+
+            .contacts {
+                color: $primary-color;
+                line-height: 3rem;
+
+                i {
+                    padding: 10px;
+                    border-radius: 50%;
+                    background-color: rgba($primary-color, $alpha: .2);
+                }
+
+                button {
+                    margin: 0;
+                    background-color: $white;
+                }
+            }
         }
     }
 }
