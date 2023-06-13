@@ -47,6 +47,12 @@ export default {
                 </div>
             </div>
         </div>
+        <div id="copyright">
+            <div class="container">
+                <p>Enjoy the low price. We are tracking any intention of privacy.</p>
+                <p><i class="fa-regular fa-copyright"></i> NEXGEN is Proudly Powered by <a href="#">Codings</a>.</p>
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -54,7 +60,6 @@ export default {
 @use './../styles/variables' as *;
 
 footer {
-    padding-block: 80px;
 
     .container {
         display: flex;
@@ -75,6 +80,7 @@ footer {
         }
 
         .form {
+            padding-block: 80px;
             width: 57%;
             margin-right: 40px;
 
@@ -113,6 +119,8 @@ footer {
 
         .contact {
             width: 30%;
+            padding-block: 80px;
+
 
             h3,
             p {
@@ -135,6 +143,28 @@ footer {
                 }
             }
         }
+    }
+
+    #copyright {
+        height: 60px;
+        background-color: #0d0d11;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            align-items: center;
+        }
+
+        p {
+            color: $white;
+            font-size: .75rem;
+
+            a {
+                color: $primary-color;
+            }
+        }
+
     }
 }
 </style>
