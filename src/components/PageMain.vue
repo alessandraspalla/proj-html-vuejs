@@ -185,7 +185,22 @@ export default {
             </div>
         </section>
 
-
+        <section id="slogan">
+            <div class="text">
+                <h1>
+                    Why choose <span>
+                        <span class="bg"></span>us?
+                    </span>
+                </h1>
+                <p>
+                    We work intensively in search of ideals that can add up in the lives of our customers. This is what
+                    motivates us to improve every day.
+                </p>
+                <button class="btn primary">
+                    GET IN TOUCH
+                </button>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -361,5 +376,42 @@ i {
         }
     }
 
+}
+
+#slogan {
+    height: 550px;
+    background-image: url('/img/bg-7.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+        width: 40%;
+        text-align: center;
+
+        h1,
+        p {
+            color: $white;
+        }
+
+        span {
+            position: relative;
+            z-index: 1;
+
+            .bg {
+                width: 105px;
+                border-radius: 5px;
+                height: 1.75rem;
+                background-color: $primary-color;
+                position: absolute;
+                left: 0;
+                bottom: 10px;
+                z-index: -1;
+            }
+        }
+
+    }
 }
 </style>
