@@ -85,15 +85,115 @@ export default {
                 </div>
             </div>
         </section>
+
+        <section id="pricing-table">
+            <div class="container">
+                <span class="summary">MONTHLY PLANS</span>
+                <h2>Pricing Table</h2>
+                <p>
+                    We can help you deliver and execute your future, wherever you compete, using the latest technologies,
+                    from
+                    strategy development to implemention.
+                </p>
+
+                <div class="row">
+                    <div class="card">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h3>Standard</h3>
+                        <span>$ <strong>490</strong> / mo</span>
+                        <ul>
+                            <li>
+                                National Coverage
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li>
+                                Unlimited Motoboy
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li>
+                                Address Collection
+                                <i class="fa-solid fa-xmark"></i>
+                            </li>
+                            <li>
+                                Mobile App Training
+                                <i class="fa-solid fa-xmark"></i>
+                            </li>
+                            <li>
+                                Cargo Insurance
+                                <i class="fa-solid fa-xmark"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card scale">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3>Professional</h3>
+                        <span>$ <strong>890</strong> / mo</span>
+                        <ul>
+                            <li>
+                                National Coverage
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li>
+                                Unlimited Motoboy
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li>
+                                Address Collection
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li>
+                                Mobile App Training
+                                <i class="fa-solid fa-xmark"></i>
+                            </li>
+                            <li>
+                                Cargo Insurance
+                                <i class="fa-solid fa-xmark"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-gem"></i>
+                        <h3>Ultimate</h3>
+                        <span>$ <strong>1390</strong> / mo</span>
+                        <ul>
+                            <li>
+                                National Coverage
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li>
+                                Unlimited Motoboy
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li>
+                                Address Collection
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li>
+                                Mobile App Training
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li>
+                                Cargo Insurance
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
 <style lang="scss" scoped>
 @use './../styles/variables' as *;
 
+i {
+    color: $primary-color;
+    font-size: 2rem;
+}
+
 #delivery-methods {
     background-color: #111117;
-    min-height: 500px;
     padding-block: 80px;
 
     .container {
@@ -103,11 +203,6 @@ export default {
         .icon {
             display: flex;
             justify-content: space-between;
-
-            i {
-                color: $primary-color;
-                font-size: 2rem;
-            }
 
             .fa-arrow-right {
                 font-size: 1.5rem;
@@ -123,9 +218,6 @@ export default {
 
             h2 {
                 color: $white;
-                font-size: 2.8rem;
-                line-height: 2.9rem;
-                font-weight: 900;
 
                 span {
                     position: relative;
@@ -155,10 +247,6 @@ export default {
         .methods {
             padding: 30px;
             background-color: #19191f;
-        }
-
-        h3 {
-            margin-block: 20px;
         }
 
         .description,
@@ -196,6 +284,62 @@ export default {
 
     }
 
+
+}
+
+#pricing-table {
+    text-align: center;
+    padding-block: 80px;
+    background-color: #eef4ed;
+
+    span {
+        display: inline-block;
+        color: $primary-color;
+        margin-bottom: 20px;
+
+        strong {
+            font-size: 2rem;
+        }
+    }
+
+    h2,
+    p {
+        color: $title-color;
+    }
+
+    p {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .card.scale {
+            transform: scale(1.09);
+        }
+
+        .card {
+            width: 30%;
+            background-color: $white;
+            padding: 30px 25px;
+            border-radius: 10px;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                color: $title-color;
+                margin-block: 12px;
+                font-size: .9rem;
+
+                i {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
 
 }
 </style>

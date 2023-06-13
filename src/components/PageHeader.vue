@@ -132,7 +132,6 @@ header {
         transform: translate(0, -50%);
 
         h1 {
-            line-height: 3.7rem;
             color: $title-color;
         }
 
