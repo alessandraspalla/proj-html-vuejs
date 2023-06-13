@@ -125,6 +125,9 @@ export default {
                         </ul>
                     </div>
                     <div class="card scale">
+                        <div class="label">
+                            Most Popular
+                        </div>
                         <i class="fa-solid fa-briefcase"></i>
                         <h3>Professional</h3>
                         <span>$ <strong>890</strong> / mo</span>
@@ -181,6 +184,8 @@ export default {
                 </div>
             </div>
         </section>
+
+
     </main>
 </template>
 
@@ -319,12 +324,27 @@ i {
 
         .card.scale {
             transform: scale(1.09);
+            position: relative;
+
+            .label {
+                text-align: left;
+                font-size: .65rem;
+                color: $white;
+                padding: 3px;
+                width: 50px;
+                height: 30px;
+                border-radius: 0 20px 20px 0;
+                background-color: #0da6a6;
+                position: absolute;
+                left: 0;
+                top: 20px;
+            }
         }
 
         .card {
             width: 30%;
             background-color: $white;
-            padding: 30px 25px;
+            padding: 40px 25px;
             border-radius: 10px;
 
             li {
