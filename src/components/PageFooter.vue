@@ -7,7 +7,7 @@ export default {
 <template>
     <footer>
         <div class="container">
-            <div class="form">
+            <div id="form">
                 <span class="summary">SEND A MESSAGE</span>
                 <h2>Get In <span>Touch</span></h2>
                 <p>We will respond to your message as soon as possible.</p>
@@ -79,7 +79,7 @@ footer {
             background-color: rgba($primary-color, $alpha: .15);
         }
 
-        .form {
+        #form {
             padding-block: 80px;
             width: 57%;
             margin-right: 40px;

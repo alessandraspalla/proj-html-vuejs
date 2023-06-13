@@ -14,19 +14,19 @@ export default {
             links: [
                 {
                     text: 'HOME',
-                    url: '#'
+                    url: '#contacts'
                 },
                 {
                     text: 'SERVICES',
-                    url: '#'
+                    url: '#delivery-methods'
                 },
                 {
                     text: 'ABOUT',
-                    url: '#'
+                    url: '#industry-leader'
                 },
                 {
                     text: 'PRICING',
-                    url: '#'
+                    url: '#pricing-table'
                 },
                 {
                     //text: '<i class="fa-thin fa-user"></i>',
@@ -34,7 +34,7 @@ export default {
                 },
                 {
                     text: 'GET IN TOUCH',
-                    url: '#',
+                    url: '#form',
                     btn: true
                 }
             ]

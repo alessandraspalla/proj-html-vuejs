@@ -205,9 +205,9 @@ export default {
                     We work intensively in search of ideals that can add up in the lives of our customers. This is what
                     motivates us to improve every day.
                 </p>
-                <button class="btn primary">
+                <a href="#form" class="btn primary">
                     GET IN TOUCH
-                </button>
+                </a>
             </div>
         </section>
     </main>
@@ -400,6 +400,11 @@ i {
     align-items: center;
     justify-content: center;
 
+    a {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
     .text {
         width: 40%;
         text-align: center;
@@ -426,4 +431,5 @@ i {
         }
 
     }
-}</style>
+}
+</style>

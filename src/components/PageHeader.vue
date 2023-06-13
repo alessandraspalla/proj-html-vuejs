@@ -60,9 +60,9 @@ export default {
                 <h1>What are we going to deliver <span>
                         <div class="bg"></div>today?
                     </span></h1>
-                <button class="btn primary">
+                <a href="#form" class="btn primary">
                     GET IN TOUCH
-                </button>
+                </a>
                 <button class="btn reverse">
                     READ MORE
                 </button>
@@ -137,6 +137,11 @@ header {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
+
+        a {
+            margin-left: 0;
+            margin-right: 12px;
+        }
 
         h1 {
             color: $title-color;
