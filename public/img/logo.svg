@@ -6,7 +6,7 @@
 	.st0{display:none;fill:#1F323D;}
 	.st1{display:none;opacity:0.1;fill:#1C9A9A;}
 	.st2{opacity:0.15;fill:#1C9A9A;}
-	.st3{fill:#BEC1CE;}
+	.st3{fill:#000;}
 	.st4{fill:#1C9A9A;}
 </style>
 <rect x="-109.74" y="-73.82" class="st0" width="595.28" height="259.93"/>

@@ -9,7 +9,7 @@ export default {
         <section id="delivery-methods">
             <div class="container">
                 <div class="col">
-                    <span class="light-color">WHAT WE DO</span>
+                    <span class="summary">WHAT WE DO</span>
                     <h2>We offer a full range of
                         <span>
                             <div class="bg"></div>delivery
@@ -71,7 +71,7 @@ export default {
         <section id="industry-leader">
             <div class="container">
                 <div id="text">
-                    <span>WHO WE ARE</span>
+                    <span class="summary">WHO WE ARE</span>
                     <h1>Industry Leaders.</h1>
                     <p>
                         With all of this expertise and capability comes an unrivalled commitment to customer service.
@@ -79,6 +79,9 @@ export default {
                     <p>
                         We will work hard to understand your needs in order to develop a productive, long-term partnership.
                     </p>
+                    <button class="btn primary">
+                        READ MORE
+                    </button>
                 </div>
             </div>
         </section>
@@ -96,10 +99,6 @@ export default {
     .container {
         display: flex;
         flex-wrap: wrap;
-
-        .light-color {
-            color: $primary-color;
-        }
 
         .icon {
             display: flex;
@@ -159,13 +158,12 @@ export default {
         }
 
         h3 {
-            color: $white;
             margin-block: 20px;
         }
 
-        .description {
+        .description,
+        h3 {
             color: $white;
-            font-weight: 500;
         }
     }
 
@@ -186,7 +184,8 @@ export default {
         #text {
             width: 40%;
 
-            h1 {
+            h1,
+            p {
                 color: $title-color;
             }
 

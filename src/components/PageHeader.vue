@@ -52,7 +52,7 @@ export default {
                 </ul>
             </nav>
             <div id="jumbotron">
-                <span>EXPRESS DELIVERY</span>
+                <span class="summary">EXPRESS DELIVERY</span>
                 <h1>What are we going to deliver <span>
                         <div class="bg"></div>today?
                     </span></h1>
@@ -148,10 +148,6 @@ header {
                 left: 0;
                 bottom: 3px;
             }
-        }
-
-        span {
-            color: #0da6a6;
         }
     }
 }
