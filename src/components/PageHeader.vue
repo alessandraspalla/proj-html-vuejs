@@ -17,9 +17,9 @@ export default {
                 Open Hours: Mon - Sat - 9:00 - 18:00
             </div>
             <div class="contact">
-                <div v-for="contact in contacts" :class="contact.type">
+                <div v-for="contact in contacts" class="icon">
                     <i :class="contact.icon"></i>
-                    {{ contact.text }}
+                    <span class="none">{{ contact.text }}</span>
                 </div>
                 <div class="social">
                     <a href="https://www.facebook.com/">
@@ -102,6 +102,10 @@ export default {
             display: flex;
             gap: 20px;
 
+            .icon i {
+                margin-right: 8px;
+            }
+
 
             a {
                 color: $white;
@@ -172,6 +176,24 @@ header {
                 bottom: 3px;
             }
         }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    header {
+        background-position: bottom;
+    }
+
+    .icon:hover .none {
+        display: inline-block;
+    }
+
+    .none {
+        display: none;
     }
 }
 </style>
