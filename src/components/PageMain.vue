@@ -8,7 +8,7 @@ export default {
                     id: 1,
                     icon: 'fa-solid fa-rocket',
                     title: 'Standard',
-                    price: '$ 490 / mo',
+                    price: '490',
                     bestPrice: false,
                     services: [
                         {
@@ -37,7 +37,7 @@ export default {
                     id: 2,
                     icon: 'fa-solid fa-briefcase',
                     title: 'Professional',
-                    price: '$ 890 / mo',
+                    price: '890',
                     bestPrice: true,
                     services: [
                         {
@@ -66,7 +66,7 @@ export default {
                     id: 3,
                     icon: 'fa-solid fa-gem',
                     title: 'Ultimate',
-                    price: '$ 1390 / mo',
+                    price: '1390',
                     bestPrice: false,
                     services: [
                         {
@@ -203,7 +203,7 @@ export default {
                         </div>
                         <i :class="card.icon"></i>
                         <h3>{{ card.title }}</h3>
-                        <span>{{ card.price }}</span>
+                        <span>$ <strong>{{ card.price }}</strong> / mo</span>
                         <ul>
                             <li v-for="service in card.services">
                                 {{ service.text }}
