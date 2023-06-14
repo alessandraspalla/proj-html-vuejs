@@ -2,7 +2,8 @@
 export default {
     name: 'PageHeader',
     props: {
-        details: Array
+        details: Array,
+        contacts: Array
     }
 }
 </script>
@@ -16,13 +17,9 @@ export default {
                 Open Hours: Mon - Sat - 9:00 - 18:00
             </div>
             <div class="contact">
-                <div class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    +1 (305) 1234-5678
-                </div>
-                <div class="email">
-                    <i class="fa-solid fa-envelope"></i>
-                    hello@example.com
+                <div v-for="contact in contacts" :class="contact.type">
+                    <i :class="contact.icon"></i>
+                    {{ contact.text }}
                 </div>
                 <div class="social">
                     <a href="https://www.facebook.com/">

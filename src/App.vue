@@ -28,6 +28,23 @@ export default {
                     text: 'PRICING',
                     url: '#pricing-table'
                 }
+            ],
+            contacts: [
+                {
+                    icon: 'fa-solid fa-phone',
+                    text: '+1 (305) 1234-5678',
+                    type: 'number'
+                },
+                {
+                    icon: 'fa-solid fa-envelope',
+                    text: 'hello@example.com',
+                    type: 'mail'
+                },
+                {
+                    icon: 'fa-solid fa-location-dot',
+                    text: 'Main Avenue, 987',
+                    type: 'maps'
+                }
             ]
         }
     }
@@ -35,9 +52,9 @@ export default {
 </script>
 
 <template>
-    <PageHeader :details="links" />
+    <PageHeader :details="links" :contacts="contacts" />
     <PageMain />
-    <PageFooter />
+    <PageFooter :contacts="contacts" />
 </template>
 
 <style lang="scss">

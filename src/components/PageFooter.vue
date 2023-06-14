@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: 'PageFooter'
+    name: 'PageFooter',
+    props: {
+        contacts: Array
+    }
 }
 </script>
 
@@ -29,17 +32,9 @@ export default {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <p>Praesent diam lacus, lapibus sed imperdiet consectetur.</p>
                 <div class="contacts">
-                    <div class="phone">
-                        <i class="fa-solid fa-phone"></i>
-                        +1 (305) 1234-5678
-                    </div>
-                    <div class="email">
-                        <i class="fa-solid fa-envelope"></i>
-                        hello@example.com
-                    </div>
-                    <div class="maps">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Main Avenue, 987
+                    <div v-for="contact in contacts" :class="contact.type">
+                        <i :class="contact.icon"></i>
+                        {{ contact.text }}
                     </div>
                     <button class="btn reverse">
                         VIEW MAP
