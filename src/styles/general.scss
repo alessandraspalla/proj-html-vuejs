@@ -56,6 +56,12 @@ p {
     font-size: .8rem;
     margin-top: 20px;
     margin-right: 10px;
+    transition: all ease-in-out .6s;
+
+    &:hover {
+        opacity: .8;
+        box-shadow: 3px 3px 3px #999;
+    }
 }
 
 .btn.primary {

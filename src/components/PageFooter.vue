@@ -58,6 +58,7 @@ footer {
 
     .container {
         display: flex;
+        justify-content: space-between;
 
         h2 {
             margin-top: 10px;
