@@ -403,6 +403,7 @@ i {
                 color: $title-color;
                 margin-block: 12px;
                 font-size: .9rem;
+                font-weight: 200;
 
                 i {
                     font-size: 1.1rem;

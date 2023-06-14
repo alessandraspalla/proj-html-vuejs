@@ -126,10 +126,18 @@ footer {
                 color: $primary-color;
                 line-height: 3rem;
 
+                div {
+                    font-weight: 300;
+                }
+
                 i {
                     padding: 10px;
                     border-radius: 50%;
                     background-color: rgba($primary-color, $alpha: .2);
+                }
+
+                .fa-location-dot {
+                    padding-inline: 12px;
                 }
 
                 button {

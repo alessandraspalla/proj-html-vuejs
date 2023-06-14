@@ -45,7 +45,7 @@ export default {
                 </div>
                 <ul>
                     <li v-for="link in details">
-                        <a :href="link.url" :class="link.btn ? 'btn primary' : ''">
+                        <a :href="link.url">
                             {{ link.text }}
                         </a>
                     </li>
@@ -88,6 +88,10 @@ export default {
     color: $white;
     font-size: .75rem;
 
+    div {
+        font-weight: 200;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -97,6 +101,7 @@ export default {
         .contact {
             display: flex;
             gap: 20px;
+
 
             a {
                 color: $white;
