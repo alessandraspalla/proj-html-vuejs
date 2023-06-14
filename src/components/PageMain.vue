@@ -1,6 +1,99 @@
 <script>
 export default {
-    name: 'PageMain'
+    name: 'PageMain',
+    data() {
+        return {
+            pricingCards: [
+                {
+                    id: 1,
+                    icon: 'fa-solid fa-rocket',
+                    title: 'Standard',
+                    price: '$ 490 / mo',
+                    bestPrice: false,
+                    services: [
+                        {
+                            text: 'National Coverage',
+                            status: true
+                        },
+                        {
+                            text: 'Unlimited Motoboy',
+                            status: true
+                        },
+                        {
+                            text: 'Address Collection',
+                            status: false
+                        },
+                        {
+                            text: 'Mobile App Training',
+                            status: false
+                        },
+                        {
+                            text: 'Cargo Insurance',
+                            status: false
+                        }
+                    ]
+                },
+                {
+                    id: 2,
+                    icon: 'fa-solid fa-briefcase',
+                    title: 'Professional',
+                    price: '$ 890 / mo',
+                    bestPrice: true,
+                    services: [
+                        {
+                            text: 'National Coverage',
+                            status: true
+                        },
+                        {
+                            text: 'Unlimited Motoboy',
+                            status: true
+                        },
+                        {
+                            text: 'Address Collection',
+                            status: true
+                        },
+                        {
+                            text: 'Mobile App Training',
+                            status: false
+                        },
+                        {
+                            text: 'Cargo Insurance',
+                            status: false
+                        }
+                    ]
+                },
+                {
+                    id: 3,
+                    icon: 'fa-solid fa-gem',
+                    title: 'Ultimate',
+                    price: '$ 1390 / mo',
+                    bestPrice: false,
+                    services: [
+                        {
+                            text: 'National Coverage',
+                            status: true
+                        },
+                        {
+                            text: 'Unlimited Motoboy',
+                            status: true
+                        },
+                        {
+                            text: 'Address Collection',
+                            status: true
+                        },
+                        {
+                            text: 'Mobile App Training',
+                            status: true
+                        },
+                        {
+                            text: 'Cargo Insurance',
+                            status: true
+                        }
+                    ]
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -104,89 +197,18 @@ export default {
                 <!-- row with d-flex -->
                 <div class="row">
                     <!-- card -->
-                    <div class="card">
-                        <i class="fa-solid fa-rocket"></i>
-                        <h3>Standard</h3>
-                        <span>$ <strong>490</strong> / mo</span>
-                        <ul>
-                            <li>
-                                National Coverage
-                                <i class="fa-solid fa-check"></i>
-                            </li>
-                            <li>
-                                Unlimited Motoboy
-                                <i class="fa-solid fa-check"></i>
-                            </li>
-                            <li>
-                                Address Collection
-                                <i class="fa-solid fa-xmark"></i>
-                            </li>
-                            <li>
-                                Mobile App Training
-                                <i class="fa-solid fa-xmark"></i>
-                            </li>
-                            <li>
-                                Cargo Insurance
-                                <i class="fa-solid fa-xmark"></i>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- card with best price -->
-                    <div class="card scale">
-                        <div class="label">
+                    <div v-for="card in pricingCards" class="card" :class="card.bestPrice ? 'scale' : ''" :key="card.id">
+                        <div v-if="card.bestPrice" class="label">
                             Most Popular
                         </div>
-                        <i class="fa-solid fa-briefcase"></i>
-                        <h3>Professional</h3>
-                        <span>$ <strong>890</strong> / mo</span>
+                        <i :class="card.icon"></i>
+                        <h3>{{ card.title }}</h3>
+                        <span>{{ card.price }}</span>
                         <ul>
-                            <li>
-                                National Coverage
-                                <i class="fa-solid fa-check"></i>
-                            </li>
-                            <li>
-                                Unlimited Motoboy
-                                <i class="fa-solid fa-check"></i>
-                            </li>
-                            <li>
-                                Address Collection
-                                <i class="fa-solid fa-check"></i>
-                            </li>
-                            <li>
-                                Mobile App Training
-                                <i class="fa-solid fa-xmark"></i>
-                            </li>
-                            <li>
-                                Cargo Insurance
-                                <i class="fa-solid fa-xmark"></i>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- card -->
-                    <div class="card">
-                        <i class="fa-solid fa-gem"></i>
-                        <h3>Ultimate</h3>
-                        <span>$ <strong>1390</strong> / mo</span>
-                        <ul>
-                            <li>
-                                National Coverage
-                                <i class="fa-solid fa-check"></i>
-                            </li>
-                            <li>
-                                Unlimited Motoboy
-                                <i class="fa-solid fa-check"></i>
-                            </li>
-                            <li>
-                                Address Collection
-                                <i class="fa-solid fa-check"></i>
-                            </li>
-                            <li>
-                                Mobile App Training
-                                <i class="fa-solid fa-check"></i>
-                            </li>
-                            <li>
-                                Cargo Insurance
-                                <i class="fa-solid fa-check"></i>
+                            <li v-for="service in card.services">
+                                {{ service.text }}
+                                <i v-if="service.status" class="fa-solid fa-check"></i>
+                                <i v-else class="fa-solid fa-xmark"></i>
                             </li>
                         </ul>
                     </div>
@@ -360,7 +382,7 @@ i {
                 color: $white;
                 padding: 3px;
                 width: 50px;
-                height: 30px;
+                height: 40px;
                 border-radius: 0 20px 20px 0;
                 background-color: #0da6a6;
                 position: absolute;
