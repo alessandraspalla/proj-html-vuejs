@@ -292,7 +292,7 @@ i {
         .col-60 {
             width: calc((100% / 3 - 40px) * 2 + 40px);
             margin: 20px;
-            height: 205px;
+            min-height: 205px;
             border-radius: 10px;
         }
 
@@ -336,8 +336,6 @@ i {
         }
 
     }
-
-
 }
 
 /* pricing-table section style */
@@ -454,6 +452,31 @@ i {
             }
         }
 
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #industry-leader {
+        height: 500px;
+        background-position: bottom;
+    }
+
+    #pricing-table {
+        .row {
+            .card {
+                width: 31%;
+                padding-block: 30px;
+            }
+
+        }
+
+    }
+
+    #slogan {
+        .text {
+            width: 60%;
+        }
     }
 }
 </style>

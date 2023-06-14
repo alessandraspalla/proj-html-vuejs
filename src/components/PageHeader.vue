@@ -180,9 +180,6 @@ header {
 }
 
 @media screen and (max-width:768px) {
-    .container {
-        max-width: 750px;
-    }
 
     header {
         background-position: bottom;
